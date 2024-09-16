@@ -1,0 +1,22 @@
+.emp{
+    display: flex;
+
+}
+
+p{
+    padding: 10px;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  } */
+
+ /* td{
+    text-align: center;
+    padding: 10px;
+ } */

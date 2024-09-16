@@ -1,0 +1,11 @@
+<h2>Parent Component</h2>
+<div>
+    <form>
+        <label for="fname">Enter your First Name : </label>
+        <input type="text" name="fname" [(ngModel)]="userName"><br><br>
+        <label for="age">Enter your Age : </label>
+        <input type="number" name="age" [(ngModel)]="age">
+    </form>
+</div>
+<p> Greetings from Child Component : {{greetings}}</p>
+<app-child [name] = "userName" [age] = "age" (greet)="DoAction($event)" ></app-child>

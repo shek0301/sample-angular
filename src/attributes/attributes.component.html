@@ -1,0 +1,46 @@
+
+    <h2>ANGULAR ATTRIBUTES</h2>
+
+    <!-- NG IF -->
+    <p>NgIF : </p>
+    <div>
+        <input type="checkbox" [(ngModel)]="check">
+    </div>
+    <div>
+        <p *ngIf="check">Checked!!!</p>
+        <p *ngIf="!check">Unchecked!!!</p>
+    </div>
+
+    <!-- NG STYLE -->
+    <p>NgStyle : </p>
+    <input type="text" [ngStyle]="{'color' : 'blue'}"><br>
+
+    <!-- NG CLASS -->
+    <p>NgClass : </p>
+    <div [ngClass]="['nClass']">
+        ngClass 
+    </div>
+
+    <!-- NG FOR -->
+    <p>Ng For : </p>
+    <div>
+        <label for="city"></label>
+        <select [attr.style]="attr" [(ngModel)]="selectedValue" name="city">
+            <option *ngFor="let cities of city" [value]="city">{{city}}</option>
+        </select>
+    </div>
+
+    <p>Ng Switch : </p>
+    <!-- NG SWITCH CASE -->
+    <div [ngSwitch]="selectedValue">
+        <div *ngSwitchCase="city[0]">Vandavasi</div>
+        <div *ngSwitchCase="city[1]">Arcot</div>
+        <div *ngSwitchCase="city[2]">Vellore</div>
+        <div *ngSwitchCase="city[3]">Arni</div>
+        <div *ngSwitchCase="city[4]">Chennai</div>
+        <div *ngSwitchCase="city[5]">Cheyyar/div>
+    </div>
+
+
+
+

@@ -1,0 +1,12 @@
+<h2>This is Child Component</h2>
+<p>From Parent Component [NAME] : {{name}}</p>
+<p>From Parent Component [Age] : {{age}}</p>
+<p>Previous Value : {{previousChange}}</p>
+<p>Current Value : {{currentChange}}</p>
+
+<div>
+    <form>
+        <label for="grt">Greetings From Child to Parent : </label>
+        <input type="text" name="grt" [(ngModel)] = "greetings" (keyup)="passDataToParent()">
+    </form>
+</div>
